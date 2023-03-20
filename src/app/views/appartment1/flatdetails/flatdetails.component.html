@@ -1,0 +1,31 @@
+
+
+<div style="text-align:center;color:blue">
+    <h3>FLAT DETAILS</h3>
+</div>
+<td style="float: right;"><button type="button"class="btn btn-warning btn-sm" routerLink="/appartment1/flatinfo">ADD</button></td>&nbsp;&nbsp;
+<table class="table table-hovered">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th (click)="sort('name')">Name <i class="fa fa-sort" aria-hidden="true"></i></th>
+        <th>Block</th>
+        <th>Flat</th>
+        <th>Actions</th>
+        <th>Actions</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let data of Flat|orderBy :'name':reverse;let i=index">
+        <td>{{i+1}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.block}}</td>
+        <td>{{data.flat}}</td> 
+        <td><button type="button" class="btn btn-outline-success btn-sm"[routerLink]="['/appartment1/flatview/'+data.id]"><i class="fa fa-asterisk" aria-hidden="true"></i>
+            Details</button></td> 
+        <td><button type="button" class="btn btn-outline-success btn-sm"[routerLink]="['/appartment1/flatinfo/'+data.id]"><i class="fa fa-pencil" aria-hidden="true">Edit</i></button></td>
+        <td><button type="button"class="btn btn-outline-danger btn-sm"(click)="delete(data)"><i class="fa fa-trash-o" aria-hidden="true"></i>Delete</button></td>
+    </tr>
+    </tbody>
+</table>

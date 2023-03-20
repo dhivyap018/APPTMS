@@ -1,0 +1,43 @@
+ 
+     <form [formGroup]="editForm"(ngSubmit)="onSubmit()"novalidate> 
+        <div class="row">
+            <div class="col-md-4">   
+            <div class="form-floating mb-3">
+                <label for="id">Name</label><br>
+                <input type="text"formControlName="name" class="form-control" id="name" name="name"required [(ngModel)]="name"/>
+            </div>
+            <div class="form-floating mb-3">
+                <label for="id">Block</label><br>
+                <input type="text"formControlName="block"  class="form-control" id="block" name="block"required [(ngModel)]="block"/>
+            </div>
+            <div class="form-floating mb-3">
+                <label for="id">Email_ID</label><br>
+                <input type="text"formControlName="email_id"  class="form-control" id="email_id" name="email_id"required [(ngModel)]="email_id"/>
+            </div>
+            <div class="form-floating mb-3">
+                <label for="id">Flat</label><br>
+                <input type="text"(change)="changeFlat($event)"formControlName="flat"  class="form-control" id="changeFlat" name="flat"required [(ngModel)]="flat"/>
+            </div>
+            <div class="form-floating mb-3">
+                <label for="id">Id_proof</label><br>
+                <input type="text"formControlName="id_proof"  class="form-control" id="id_proof" name="id_proof"required [(ngModel)]="id_proof"/>
+            </div>
+            <div class="form-floating mb-3">
+                <label for="id">Role</label><br>
+                <input type="text"formControlName="role"  class="form-control" id="role" name="role"required [(ngModel)]="role"/>
+            </div><br>
+            <div class="form-floating mb-3">
+                <label for="id">Address</label><br>
+                <input type="text"formControlName="address"  class="form-control" id="address" name="address"required [(ngModel)]="address"/>
+            </div><br>
+            <div class="form-floating mb-3">
+                <label for="id">Mobile</label><br>
+                <input type="text"formControlName="mobile"  class="form-control" id="mobile" name="mobile"required [(ngModel)]="mobile"/>
+            </div><br>
+            <button type="button" class="btn btn-outline-success btn-sm" (click)="adduser()">Save</button>&nbsp;&nbsp;
+            <button type="submit" class="btn btn-primary btn-sm"[disabled]="!editForm.valid">Update</button>&nbsp;&nbsp;
+            <button type="reset" class="btn btn-danger btn-sm"*ngIf="isShowResetBtn">Reset</button>
+        </div>
+        </div>
+        </form>
+        

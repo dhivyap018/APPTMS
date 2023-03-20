@@ -1,0 +1,17 @@
+<h2>PaymentYear2021</h2>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Rentmonth</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of Pay;let i=index;">
+        <td>{{i+1}}</td>
+       <td> {{user.payinfo2021.monthname}}</td>
+        <td><a class=""[routerLink]="['/appartment1/paychild2021/'+user.id]">click payment2021 details</a></td>
+    </tr>
+    </tbody>
+</table>

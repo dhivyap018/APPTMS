@@ -1,0 +1,138 @@
+export interface viewinvoice
+    {
+    id:string;
+    invoice:{  
+      name:string;
+      block:string;
+      flat:string; 
+    
+    january:{
+    amount:number;
+    balance:string;
+    date:string;
+     due:number;
+     invoicedes:string;
+    invoiceno:string;
+     status:string;
+     recstatus:string;
+    },
+february:{
+    amount:number;
+    balance:number;
+    date:string;
+    due:number;
+    invoicedes:string;
+    invoiceno:string;
+     status:string;
+     recstatus:string;
+},
+march:{
+    amount:number;
+    balance:number;
+date:string; 
+due:number; 
+invoicedes:string;
+invoiceno:string;
+status:string;
+recstatus:string;
+}
+},
+  april:{
+    amount:number;
+    balance:number;
+date:string; 
+due:number;
+invoicedes:string;
+invoiceno:string;
+status:string; 
+recstatus:string;
+},
+may:{
+  amount:number;
+  balance:number;
+date:string; 
+due:number;
+invoicedes:string;
+invoiceno:string;
+status:string; 
+recstatus:string;
+},
+june:{
+  amount:number;
+  balance:number;
+date:string; 
+due:number;
+invoicedes:string;
+invoiceno:string;
+status:string; 
+recstatus:string;
+},
+july:{
+  amount:number;
+  balance:number;
+date:string; 
+due:number;
+invoicedes:string;
+invoiceno:string;
+status:string; 
+recstatus:string;
+},
+auguest:{
+  amount:number;
+  balance:number;
+date:string; 
+due:number;
+invoicedes:string;
+invoiceno:string;
+status:string; 
+recstatus:string;
+},
+september:{
+  amount:number;
+  balance:number;
+date:string; 
+due:number;
+invoicedes:string;
+invoiceno:string;
+status:string;
+recstatus:string;
+},
+october:{
+amount:number;
+balance:number;
+date:string; 
+due:number;
+invoicedes:string;
+invoiceno:string;
+status:string; 
+recstatus:string;
+},
+november:{
+  amount:number;
+  balance:number;
+date:string; 
+due:number;
+invoicedes:string;
+invoiceno:string;
+status:string; 
+recstatus:string;
+},
+december:{
+  amount:number;
+  balance:number;
+date:string; 
+due:number;
+invoicedes:string;
+invoiceno:string;
+status:string;
+recstatus:string; 
+}
+  } 
+     
+
+
+    
+
+   
+
+

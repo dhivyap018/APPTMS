@@ -1,0 +1,16 @@
+
+   
+<div class="container">      
+<h3 class="text-dark text-muted"><u>Userdetails</u></h3> 
+<h4 class="text-danger">Particulars</h4>
+<img src ="{{items.urldata}}">
+<h4>Name:{{items.name}}</h4>
+<h4>Email_ID:{{items.email_id}}</h4>
+<h4>Id_proof:{{items.id_proof}}</h4>
+<h4>Address:{{items.address}}</h4>
+<h4>Mobile:{{items.mobile}}</h4>
+</div>
+<td><button type="button"class="btn btn-outline-success btn-sm"[routerLink]="['/appartment1/adduser/'+items.id]"><i class="fa fa-pencil" aria-hidden="true"></i>EDIT</button></td>&nbsp;&nbsp;&nbsp;
+<td><input type="file"(change)="upload($event)" accept="*.png.jpg"id=""></td>
+<td><button type="button"class="btn-outline-danger"(click)="update(items)">uploadImage</button></td>
+

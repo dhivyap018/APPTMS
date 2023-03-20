@@ -1,0 +1,15 @@
+<table class="table table-hovered">
+    <tr>
+    <thead>
+        <th>Block</th>
+        <th>Flat</th>
+    </thead>
+    </tr>
+   <tr>
+<tr *ngFor="let user of Demo; let i=index; ">
+    <td>{{i+1}}</td>
+   <td>{{user.name}}</td>
+    <td>{{user.block}}</td>
+    <td>{{user.userid}}</td>
+</tr>
+</table>

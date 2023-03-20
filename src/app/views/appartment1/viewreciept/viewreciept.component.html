@@ -1,0 +1,11 @@
+ <table class="table table-bordered">
+    <thead>
+     <th>#</th>
+     <th>Name</th>
+     <th>Actions</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of invoicereciept;let i=index">
+       <td>{{i+1}}</td> 
+    <td>{{user.invoice.name}}</td>
+</table> 

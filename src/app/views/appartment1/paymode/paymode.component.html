@@ -1,0 +1,61 @@
+<h2>PaymentYear2022</h2>
+<table class="table table-bordered">
+    <thead>
+<tr>
+    <th>#</th>
+    <th>Rentmonth </th>
+    <th>Actions</th>
+</tr>
+    </thead>
+    <tbody>
+<tr *ngFor="let user of Pay;let i=index;">
+    <td>{{i+1}}</td>
+    <td>{{user.month.monthname}}</td>
+    <td><a class=""[routerLink]="['/appartment1/paylist/'+user.id]">click payent2022 details</a></td>
+   
+ <!-- <td><form #SampleForm="ngForm"><br>
+        <div class="mb-3">
+            <select class="form-select-lgmb-8" name="payment"placeholder="PaymentYear"[(ngModel)] ="selectType">
+                <option value="2021">2021</option>
+                <option value="2022"[routerLink]="['/appartment1/image']">2022</option>
+                <option value="2023">2023</option>
+                <option value="none">None</option>
+            </select>
+       </div>
+    </form>
+</td> -->
+</tr>
+    </tbody>
+    <td><button type="button" class=" btn btn-outline-success btn-sm"style="float:float-end"[routerLink]="['/appartment1/payment2021/']"> payment2021 </button></td>
+</table>
+<!-- <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link">Previous</a></li>
+      <li class="page-item"><a class="page-link" [routerLink]="['/appartment1/paymode']">1</a></li>
+      <li class="page-item"><a class="page-link"[routerLink]="['/appartment1/payment2021']">2</a></li>
+      <li class="page-item"><a class="page-link">Next</a></li>
+    </ul>
+  </nav> -->
+
+ <form #SampleForm="ngForm"><br>
+    <div class="FormGroup">
+        <div class="Form-control">
+            <label class="inline-radio">
+                <input type="radio"name="payment"value="cash"ngModel>Cash&nbsp;&nbsp;
+            </label>
+            <label class="inline-radio">
+                <input type="radio"name="payment"value="cheque"ngModel>Cheque&nbsp;&nbsp;
+            </label>
+            <label class="inline-radio">
+                <input type="radio"name="payment"value="Onlinepayment-creditcard-GPay-UPI"ngModel>Onlinepayment-creditcard-GPay-UPI&nbsp;&nbsp;
+            </label>
+            <label class="inline-radio">
+                <input type="radio"name="payment"value="draft"ngModel>Draft
+            </label>
+        </div>
+        <button type="button"class="btn btn-outline-success btn-sm"[routerLink]="['/appartment1/invoice-list/']">Submit</button><br>
+    </div>
+</form>
+
+
+    

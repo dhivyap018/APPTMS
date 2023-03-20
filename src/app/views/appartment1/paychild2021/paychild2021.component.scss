@@ -1,0 +1,27 @@
+.table{
+    width:100%;
+    border-collapse: collapse;
+    border:1px;
+    box-shadow: 10px;
+}
+.table thead th{
+    margin:0%;
+    border: 1px;
+    background-color:darkgrey;
+    color:white;
+    letter-spacing: 0.35%;
+    opacity: 1;
+    padding: 1px;
+    vertical-align: top;
+    border: 1px solid;
+    }
+ .table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35%;
+    font-weight: normal;
+    padding: 1px;
+    text-align: center;
+    border: 10px solid#dee2e685;
+ }    
+ 
+ 

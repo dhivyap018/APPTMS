@@ -1,0 +1,27 @@
+
+<!-- <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field> -->
+<div>
+    <h2>InvoiceList2022</h2>
+    </div>
+<table class="table table-bordered">
+    <thead>
+     <th>#</th>
+     <th>Name</th>
+     <th>Actions</th>
+     <th>Actions</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of invoice1| paginate:{ itemsPerPage: 2, currentPage: page,totalItems:totalLength };let i=index">
+       <td>{{i+1}}</td> 
+    <td>{{user.invoice.name}}</td>
+    <td><a class=""[routerLink]="['/appartment1/invoicechild2022/'+user.id]">click view statement</a></td>
+    <td><a class=""[routerLink]="['/appartment1/viewinvoice/'+user.id]">click invoice details</a></td>
+    </tbody> 
+</table>
+<pagination-controls (pageChange)="page = $event"style="float:right;"></pagination-controls>
+
+        

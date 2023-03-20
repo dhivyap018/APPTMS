@@ -1,0 +1,40 @@
+
+
+<div style="text-align:center;color:blue">
+    <h3>USER DETAILS</h3>
+</div>
+<td style="float: right;"><button type="button"class="btn btn-outline-success btn-sm"[routerLink]="['/appartment1/adduser']">NewUser</button></td>&nbsp;&nbsp;
+<div class="container">
+<input class="form-control" type="text" placeholder="Search"style="width:450px;padding:2px 20px;margin:10px 0px;height:30px;" [(ngModel)]="searchText"> 
+</div>                                                                     
+<table class="table table-hovered">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th (click)="sort('name')">Name<i class="fa fa-sort"aria-hidden="true"></i></th>
+         <th>Block</th>
+        <th>Flat</th>
+        <th>Role</th>
+        <th>Actions</th> 
+        <th>Actions</th>
+        <th>DeleteImage</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of Users|searchfilter:searchText|orderBy :'name':reverse; let i=index; ">
+        <td>{{i+1}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.block}}</td>
+        <td>{{user.flat}}</td>
+        <td>{{user.role}}</td>
+        <td><button type="button"class="btn btn-outline-warning btn-sm"[routerLink]="['/appartment1/userview/'+user.id]"> <i class="fa fa-asterisk" aria-hidden="true"></i>Details</button></td>
+        <td><button type="button"class="btn btn-outline-danger btn-sm"(click)="deleteUsers(user)"><i class="fa fa-trash-o" aria-hidden="true"></i>Delete</button></td> 
+    <!-- <td>
+<input type="file"(change)="upload($event)" accept="*.png.jpg"id=""></td>
+ <td><button type="button"class="btn-outline-danger"(click)="update(user)">uploadImage</button></td> -->
+<td><button type="bultton" class="btn btn-outline-success btn-sm"(click)="deleteImage(user)">DeleteImage</button></td> 
+ </tr>
+ </tbody>
+</table>
+
+

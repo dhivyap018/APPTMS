@@ -1,0 +1,13 @@
+div{
+    margin: 0;
+    padding: 0;
+    
+}
+.table thead{
+    border-radius: 0%;
+    background-color: darkgrey;
+    color: white;
+}
+.table tbody tr:nth-of-type(even){
+    background-color:aliceblue;
+}

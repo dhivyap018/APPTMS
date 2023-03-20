@@ -1,0 +1,15 @@
+.div{
+    margin: 0;
+    padding: 0;
+}
+table thead{
+    margin: 0;
+    padding: 10px;
+    justify-content: left;
+    align-items: center;
+     background-color:darkgrey;
+    color:white;
+}
+ .table tbody tr:nth-of-type(even){
+    background-color:honeydew;
+}
